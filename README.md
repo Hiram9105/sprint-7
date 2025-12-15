@@ -1,27 +1,17 @@
-# Aplicación Web de Análisis de Datos de Vehículos
+# Proyecto de Análisis de Vehículos
 
-Este proyecto es una aplicación web interactiva construida con Streamlit para el análisis exploratorio de un conjunto de datos de anuncios de vehículos.
+## Descripción
 
-## Propósito
+Este proyecto analiza un conjunto de datos de vehículos usados en Estados Unidos. El objetivo principal es explorar las características de los vehículos y sus relaciones a través de una aplicación web interactiva.
 
-La aplicación sirve como una herramienta de visualización que permite a los usuarios explorar la distribución y las relaciones dentro del conjunto de datos `vehicles_us.csv`. Proporciona una interfaz gráfica sencilla para generar gráficos sin necesidad de escribir código.
+## Aplicación Web
 
-## Funcionalidad
+La aplicación web, construida con Streamlit, sirve como un dashboard para la visualización de datos del archivo `vehicles_us.csv`. Permite a los usuarios interactuar con los datos y generar visualizaciones dinámicas para obtener insights.
 
-La aplicación web actual incluye las siguientes características:
+### Funcionalidad
 
-- **Encabezado principal**: Un título claro que describe el propósito de la aplicación.
-- **Histograma de Odómetro**: Un botón que, al ser presionado, genera y muestra un histograma de la distribución del odómetro de los vehículos.
-- **Gráfico de Dispersión Odómetro vs. Precio**: Un segundo botón que construye un gráfico de dispersión para visualizar la relación entre el kilometraje y el precio de los vehículos.
+La aplicación actualmente proporciona la siguiente funcionalidad:
 
-## Cómo Ejecutar la Aplicación
-
-1.  Asegúrate de tener Python instalado.
-2.  Instala las dependencias necesarias:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  Ejecuta la aplicación desde la terminal en el directorio raíz de tu proyecto:
-    ```bash
-    streamlit run app.py
-    ```
+*   **Visualización del Conjunto de Datos**: Muestra la tabla completa con los datos de los vehículos.
+*   **Histograma de Odómetro**: Al hacer clic en un botón, se genera un histograma que muestra la distribución del kilometraje (odómetro) de los vehículos.
+*   **Gráfico de Dispersión (Precio vs. Año del Modelo)**: Al hacer clic en otro botón, se crea un gráfico de dispersión para analizar la relación entre el precio y el año de fabricación de los vehículos.
