@@ -9,7 +9,7 @@ st.header('Análisis de Datos de Vehículos')
 csv_path = Path(__file__).parent / 'vehicles_us.csv'
 
 df_vehicles = pd.read_csv(csv_path) # leer los datos
-st.dataframe(df_vehicles) # mostrar el dataframe
+st.dataframe(df_vehicles.head(10)) # mostrar las primeras 10 filas del dataframe
 
 
 if st.button('Construir histograma'):
